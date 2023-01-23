@@ -12,7 +12,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Sign up - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <title>Sign up</title>
     <!-- CSS files -->
     <link href="{{ asset('/css/tabler.min.css') }}" rel="stylesheet"/>
     <link href="{{ asset('/css/tabler-flags.min.css') }}" rel="stylesheet"/>
@@ -24,10 +24,10 @@
     <div class="page page-center">
       <div class="container-tight py-4">
         <div class="text-center mb-4">
-          <a href="." class="navbar-brand navbar-brand-autodark"><img src="{{ asset('/static/logo.svg') }}" height="36" alt=""></a>
+          <a href="." class="navbar-brand navbar-brand-autodark"><img src="{{ asset('/static/LogoI.svg') }}" height="36" alt="IMRDP"></a>
         </div>
 
-        
+
         @yield('contents')
 
 

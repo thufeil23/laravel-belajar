@@ -18,6 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/session/login', [SessionController::class, 'login'])->name('login');
-Route::get('/session/regist', [SessionController::class, 'regist'])->name('regist');
-Route::get('/session/abc', [SessionController::class, 'abc'])->name('abc');
+
+// Route::get('/home', [App\Http\Controllers\SessionController::class, 'index'])->name('home');
+// Route::get('/session/login', [SessionController::class, 'login'])->name('login');
+// Route::get('/session/regist', [SessionController::class, 'regist'])->name('regist');
+// Route::get('/session/forgot', [SessionController::class, 'forgot'])->name('forgot');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
