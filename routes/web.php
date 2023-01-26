@@ -1,7 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +24,6 @@ Route::get('/', function () {
 // Route::get('/session/regist', [SessionController::class, 'regist'])->name('regist');
 // Route::get('/session/forgot', [SessionController::class, 'forgot'])->name('forgot');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
